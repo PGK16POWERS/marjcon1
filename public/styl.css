@@ -417,6 +417,7 @@ nav ul {
     justify-content: center;
     gap: 2rem;
 }
+
 .service-card {
     padding: 0.3rem;
     border: 2px solid black;
@@ -429,8 +430,38 @@ nav ul {
     "b";
     gap: 0.4rem;
     width: 350px;
+    min-height: 400px
 }
 
+.serv-div-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.serv-div-cont h5 {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.serv-div-cont p {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(174, 174, 174);
+}
+
+.serv-redi {
+    color: gray;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+.serv-img-div {
+    border: 2px solid black;
+}
 
 
 
