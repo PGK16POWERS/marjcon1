@@ -420,7 +420,6 @@ nav ul {
 
 .service-card {
     padding: 0.3rem;
-    border: 2px solid black;
     border-radius: 4px;
     display: grid;
     grid-template-columns: 100%;
@@ -429,7 +428,7 @@ nav ul {
     "a"
     "b";
     gap: 0.4rem;
-    width: 350px;
+    width: 300px;
     min-height: 400px
 }
 
@@ -460,7 +459,13 @@ nav ul {
 }
 
 .serv-img-div {
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.serv-img {
+    width: 100%
 }
 
 
