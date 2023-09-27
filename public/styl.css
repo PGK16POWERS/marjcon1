@@ -283,8 +283,6 @@ nav ul {
     font-weight: 400;
 }
 
-
-
 /**** OTHER PROJECTS SECTION ****/
 
 /**** TEAM MEMBERS SECTION ****/
@@ -403,7 +401,7 @@ nav ul {
 
 /**** OUR SERVICES ****/
 #our-services {
-    min-height: 80vh;
+    min-height: 100vh;
     background-color: #ffffff;
     padding: 2rem 1rem;
     display: flex;
@@ -415,7 +413,7 @@ nav ul {
 .service-div-parent {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .service-card {
@@ -428,7 +426,7 @@ nav ul {
     "a"
     "b";
     gap: 0.4rem;
-    width: 300px;
+    width: 280px;
     min-height: 400px
 }
 
@@ -440,7 +438,7 @@ nav ul {
 }
 
 .serv-div-cont h5 {
-    font-size: 1.3em;
+    font-size: 1.1em;
     letter-spacing: 1px;
     font-weight: 600;
 }
@@ -456,6 +454,7 @@ nav ul {
     color: gray;
     font-size: 0.9em;
     letter-spacing: 1px;
+    margin-top: 1rem;
 }
 
 .serv-img-div {
@@ -469,5 +468,102 @@ nav ul {
 }
 
 
-
 /**** OUR SERVICES ****/
+
+/**** CTA ****/
+#cta {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.cta-div-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.cta-div-kid {
+    width: 270px;
+    height: 200px;
+    background-color: #f2f1ec;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    text-align: center;
+}
+
+.cta-div-kid:nth-child(1) {
+    border: 0 solid transparent;
+    border-radius: 4px 0 0 4px;
+}
+
+.cta-div-kid:nth-child(3) {
+    background-color: #ffc85b;
+    transform: scale(110%);
+    border-radius: 4px;
+}
+
+.cta-div-kid:nth-child(4) {
+    border: 0 solid transparent;
+    border-radius: 0 4px 4px 0;
+}
+
+.cta-div-kid h3 {
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.cta-div-kid:nth-child(3) h3{
+    color: #ffffff;
+}
+
+.cta-div-kid h4 {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.cta-div-kid:nth-child(3) h5{
+    color: #ffffff;
+}
+
+.cta-div-kid h5 {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.cta-link {
+    width: auto;
+}
+
+/**** CTA ****/
+
+/**** BLOG SECTION ****/
+#blog {
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+/**** BLOG SECTION ****/
