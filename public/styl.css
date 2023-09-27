@@ -18,6 +18,10 @@ body {
     font-family: var(--monts);
 }
 
+section {
+    width: 100%;
+}
+
 :root {
     --monts: 'Montserrat', sans-serif;
 }
@@ -34,6 +38,25 @@ header , nav ul, .inner-icon-div{
     justify-content: center;
 }
 
+h2 {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: dodgerblue;
+}
+
+p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 28px;
+}
 
 /**** HEADER SECTION ****/
 header {
@@ -108,7 +131,7 @@ nav ul {
 .hs-link {
     padding: 0.7rem 2rem;
     border: 0 solid transparent;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: orangered;
     color: #f2f1ec;
     letter-spacing: 1px;
@@ -123,15 +146,11 @@ nav ul {
 /**** ABOUT US SECTION ****/
 #aboutus {
     min-height: 80vh;
-    background-color: white;
+    background-color: #f2f1ec;
     padding: 2rem 1rem;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 100%;
-}
-
-.abo {
-    border: 2px solid black;
 }
 
 #aboutus .right {
@@ -149,42 +168,270 @@ nav ul {
     gap: 0.8rem;
 }
 
-.abo h4 {
-    font-size: 1.1em;
-    letter-spacing: 2px;
-    font-weight: 500;
-}
-
-.abo h2 {
-    font-size: 2.5em;
-    letter-spacing: 4px;
-    font-weight: 700;
-}
-
-.abo p {
-    font-size: 1em;
-    letter-spacing: 2px;
-    font-weight: 400;
-    line-height: 28px;
-}
-
 .section-image {
     width: 80%;
 }
 
-.inner-icon-div {
+.icon-div {
     gap: 1rem;
 }
 
+.inner-icon-div {
+    gap:0.5rem
+}
+
 .inner-icon-div h3 {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(125, 125, 125)
+}
+
+.small-icon {
+    width: 40px;
+}
+
+.abo-link {
+    margin-top: 1rem;
+    background-color: orange;
+    width: 150px;
+    text-align: center;
+}
+
+/**** ABOUT US SECTION ****/
+
+/**** FEATURED ARTICLE SECTION ****/
+#featured {
+    min-height: 70vh;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+}
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+    width: 100%;
+}
+
+/**** FEATURED ARTICLE SECTION ****/
+
+/**** OTHER PROJECTS SECTION ****/
+#projects {
+    min-height: 80vh;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.div-header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+
+}
+
+.sect-div-parent {
+    border: 2px solid black;
+    width: 100%;
+    padding: 0.4rem;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    align-items: center;
+    scroll-behavior: smooth;
+    height: 400px;
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 0.3rem;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    border: 2px solid darkgoldenrod;
+    border-radius: 4px;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+
+.sdp-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem
+}
+
+.sdp-cont h5 {
     font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.sdp-cont h6 {
+    font-size: 0.7em;
     letter-spacing: 1px;
     font-weight: 400;
 }
 
-.small-icon {
-    width: 120px;
+
+
+/**** OTHER PROJECTS SECTION ****/
+
+/**** TEAM MEMBERS SECTION ****/
+#team-members {
+    min-height: 80vh;
+    background-color: #e9e9e9;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.team-parent-div {
+    width: 80%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    gap: 1rem;
+}
+
+.member-div {
+    position: relative;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    gap: 0.5rem;
+    box-shadow: 0 3px 4px gainsboro;
+}
+
+.member-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.mem-cont h5 {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.mem-cont h6 {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgb(125, 125, 125)
+}
+
+.member-link {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 2rem;
+    color: rgb(45, 45, 45)
+}
+
+.member-image {
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+.team-link {
+    margin-top: 2rem;
+    box-shadow: 0 3px 5px rgb(207, 207, 207);
+    width: 170px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: rgb(255, 187, 0);
+}
+
+/**** TEAM MEMBERS SECTION ****/
+
+/**** TESTIMONIAL SECTION ****/
+#testimonials {
+    min-height: 80vh;
+    background-color: #e9e9e9;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+}
+
+#testimonials .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+}
+
+#forward, #back {
+    padding: 1rem;
+    border: 2px solid orangered;
+    color: orangered;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+#forward:hover, #back:hover,
+#forward:active, #back:active {
+    background-color: orangered;
+    color: white;
+    border: 2px solid transparent;
+}
+
+/**** TESTIMONIAL SECTION ****/
+
+/**** OUR SERVICES ****/
+#our-services {
+    min-height: 80vh;
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.service-div-parent {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.service-card {
+    padding: 0.3rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:  
+    "a"
+    "b";
+    gap: 0.4rem;
+    width: 350px;
 }
 
 
-/**** ABOUT US SECTION ****/
+
+
+/**** OUR SERVICES ****/
