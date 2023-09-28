@@ -92,6 +92,18 @@ nav ul {
 .brand-logo {
     width: 180px;
 }
+
+
+@media (max-width: 1000px) {
+   header {
+    border: 2px solid #f2f1ec
+   }
+
+   nav {
+    display: none;
+   }
+}
+
 /**** HEADER SECTION ****/
 
 
@@ -371,6 +383,43 @@ nav ul {
     text-align: center;
     letter-spacing: 2px;
     background-color: rgb(255, 187, 0);
+}
+
+@media (max-width: 1000px) {
+    .member-div {
+        position: relative;
+        border: 0 solid transparent;
+        border-radius: 4px;
+        background-color: #ffffff;
+        padding: 0.3rem;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        gap: 0.5rem;
+        box-shadow: 0 3px 4px gainsboro;
+    }
+    
+    .member-div div:nth-child(2) {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        justify-content: center;
+        padding: 1rem;
+
+    }
+
+    .member-div div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .member-image {
+        width: 250px;
+        position: relative;
+        float: right;
+    }
 }
 
 /**** TEAM MEMBERS SECTION ****/
