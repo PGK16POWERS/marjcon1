@@ -240,7 +240,6 @@ nav ul {
 }
 
 .sect-div-parent {
-    border: 2px solid black;
     width: 100%;
     padding: 0.4rem;
     display: flex;
@@ -248,8 +247,9 @@ nav ul {
     overflow-x: scroll;
     align-items: center;
     scroll-behavior: smooth;
-    height: 400px;
+    min-height: 400px;
     gap: 1rem;
+    scrollbar-width: none;
 }
 
 .project-card {
@@ -259,7 +259,6 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    border: 2px solid darkgoldenrod;
     border-radius: 4px;
     flex: 0 0 300px;
     scroll-snap-align: start;
@@ -272,7 +271,7 @@ nav ul {
 }
 
 .sdp-cont h5 {
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -281,6 +280,18 @@ nav ul {
     font-size: 0.7em;
     letter-spacing: 1px;
     font-weight: 400;
+}
+
+.project {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 /**** OTHER PROJECTS SECTION ****/
