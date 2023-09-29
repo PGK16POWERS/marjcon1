@@ -64,7 +64,6 @@ header {
     top: 0;
     left: 0;
     padding: 1rem 5rem;
-    /*box-shadow: 0 3px 4px gainsboro;*/
     width: 100%;
     background-color: inherit;
 }
@@ -93,15 +92,49 @@ nav ul {
     width: 180px;
 }
 
+.header-icons {
+    display: none;
+}
+
+#menu, #close {
+    display: none;
+    font-size: 35px;
+    padding: 0.3rem;
+    border: 0 solid transparent;
+    border-radius: 50px;
+    background-color: white;
+    color: dodgerblue;
+    box-shadow: 1px 1px 4px rgba(158, 158, 158, 0.505);
+}
 
 @media (max-width: 1000px) {
    header {
-    border: 2px solid #f2f1ec
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
    }
 
    nav {
     display: none;
    }
+   #menu, #close {
+    display: block;
+   }
+   #close {
+    display: none
+   }
+   .header-icons {
+    display: block;
+}
+}
+
+@media (max-width: 767px) {
+    header {
+        border: 2px solid #f2f1ec;
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem 1rem;
+       }
 }
 
 /**** HEADER SECTION ****/
